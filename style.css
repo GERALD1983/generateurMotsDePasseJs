@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.flexCentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.marginTop {
+  margin-top: 40px;
+}
+section {
+  background-color: beige;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  border: 3px solid crimson;
+
+  background-color: aquamarine;
+  color: crimson;
+}
+.titre {
+  font-size: 2.2em;
+  font-weight: bolder;
+}
+.range {
+  width: 200px;
+  height: 15px;
+  background-color: crimson !important;
+
+  box-shadow: 2px 5px 5px;
+  appearance: none;
+  border-radius: 5px;
+}
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+label:hover {
+  transform: scale(1.1);
+}
+input[type="checkbox"]:checked + label {
+  transform: scale(0.7);
+  background-color: beige;
+  color: crimson;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="text"] {
+  margin-left: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 80px;
+  padding-top: 10px;
+  border: none;
+  background-color: aquamarine;
+  cursor: default;
+  color: crimson;
+  font-weight: bold;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 30px;
+  background: grey;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: 0.5s ease;
+}
+button {
+  border: 3px solid beige;
+  background: crimson;
+  width: 250px;
+  height: 70px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5em;
+}
+button:hover {
+  border: 3px solid crimson;
+  background: beige;
+  color: crimson;
+  cursor: pointer;
+}

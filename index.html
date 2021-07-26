@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Generateur Mot de passe</title>
+  </head>
+  <body>
+    <section class="flexCentre">
+      <div class="container">
+        <div class="marginTop titre flexCentre">
+          Generateur de mots de passe
+        </div>
+        <div class="marginTop flexCentre">
+          <input
+            id="password-length"
+            class="range"
+            type="range"
+            min="6"
+            max="20"
+            value="7"
+            oninput="document.getElementById('read-password-length').value=this.value"
+          />
+          <input id="read-password-length" type="text" value="7" readonly />
+        </div>
+        <div class="marginTop flexAround">
+          <input id="lowercase" type="checkbox" />
+          <label for="lowercase">a-z</label>
+          <input id="uppercase" type="checkbox" />
+          <label for="uppercase">A-Z</label>
+          <input id="number" type="checkbox" />
+          <label for="number">0-9</label>
+          <input id="characters" type="checkbox" />
+          <label for="characters">%/$</label>
+        </div>
+        <div class="flexCentre marginTop">
+          <button>Generer Mdp</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
