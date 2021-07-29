@@ -36,6 +36,15 @@ const generatePass = () => {
   console.log(password);
 
   title.innerHTML = `${password}`;
+  console.log(title.innerHTML);
+  navigator.clipboard.writeText(title.innerHTML);
+  generateButton.innerHTML = "Mot de passe Copié";
+
+  setTimeout(() => {
+    alert("Celui-ci à été copier dans le presse-papier");
+    generateButton.innerHTML = "Generer Mdp";
+    title.innerHTML = `Generateur de mots de passe`;
+  }, 1000);
 };
 generateButton.addEventListener("click", () => {
   generatePass();
